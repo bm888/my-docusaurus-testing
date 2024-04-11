@@ -28,3 +28,140 @@ https
 | linkedinUser | string | LinkedIn vanity name such as `Linkedin` or `linkedin-marketing-solutions`. |
 
 GET
+
+| Name | Type | Description |
+| --- | --- | --- |
+| Authorization\* | string | Format: `Authorization: Bearer API_KEY` See Overview for more information. |
+| Profile-Key | string | Profile Key of a user profile. |
+
+```json title="tab1"
+{
+  "facebook": {
+    "about": "We invite you to wonder. ",
+    "description": "Frank Lloyd Wright's architectural masterpiece home to a world-renowned collection of modern and contemporary art.",
+    "fanCount": 845048,
+    "followersCount": 874337,
+    "id": "7640348500",
+    "isUnclaimed": false, // whether a Facebook Page that was automatically generated has been claimed by the business it represents.
+    "link": "https://www.facebook.com/7640348500",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "latitude": 40.782910059774,
+      "longitude": -73.959075808525,
+      "state": "NY",
+      "street": "1071 5th Ave",
+      "zip": "10128"
+    },
+    "name": "Solomon R. Guggenheim Museum",
+    "picture": {
+      "data": {
+        "height": 50,
+        "isSilhouette": false,
+        "url": "https://scontent.ford4-1.fna.fbcdn.net/v/t39.30808-1/352122020_2000703126929355_7618417261219676343_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=104&ccb=1-7&_nc_sid=4da83f&_nc_ohc=Y1AlQn-HyvwAX8NzExq&_nc_ht=scontent.ford4-1.fna&edm=AJdBtusEAAAA&oh=00_AfD7ms2Nv0b5x1jr_uJKZsXnngQP3dmDrjQDNz_4aaBrCg&oe=65D3ACAE",
+        "width": 50
+      }
+    },
+    "username": "guggenheimmuseum",
+    "verificationStatus": "blue_verified", // The verification status of the Facebook Page that represents a business, blue_verified or not_verified.
+    "website": "http://www.guggenheim.org/"
+  },
+  "instagram": {
+    "biography": "4x Super Bowl Champions #TogetherBlue",
+    "followersCount": 2278171,
+    "followsCount": 228,
+    "id": "17841400118294090", // Instagram Id
+    "igId": 261763943,
+    "mediaCount": 8965,
+    "name": "New York Giants",
+    "profilePictureUrl": "https://scontent-lga3-2.xx.fbcdn.net/v/t51.2885-15/209249968_563247608171409_1254577321735891919_n.jpg?_nc_cat=1&ccb=1-5&_nc_sid=86c713&_nc_ohc=T673IyEiuasAX_Jj7xu&_nc_ht=scontent-lga3-2.xx&edm=AL-3X8kEAAAA&oh=00_AT8GNdOos4riN7NhrI06a6TkVKgOf5p_RUlsOQUwPRW3VQ&oe=6247F2F0",
+    "username": "nygiants",
+    "website": "http://nygnt.co/vgle2"
+  },
+  "linkedin": {
+    "vanityName": "linkedin",
+    "name": {
+      "localized": {
+        "it_IT": "LinkedIn",
+        "ru_RU": "LinkedIn",
+        "pl_PL": "LinkedIn",
+        "ro_RO": "LinkedIn",
+        "sv_SE": "LinkedIn",
+        "da_DK": "LinkedIn",
+        "tr_TR": "LinkedIn",
+        "pt_BR": "LinkedIn"
+      },
+      "preferredLocale": {
+        "country": "US",
+        "language": "en"
+      }
+    },
+    "locations": [
+      {
+        "address": {
+          "geographicArea": "CA",
+          "country": "US",
+          "city": "Sunnyvale",
+          "line1": "1000 W Maude",
+          "postalCode": "94085"
+        },
+        "staffCountRange": "SIZE_1",
+        "geoLocation": "urn:li:geo:106316449",
+        "locationType": "HEADQUARTERS",
+        "streetAddressFieldState": "UNSET_OPT_OUT"
+      },
+      {
+        "address": {
+          "geographicArea": "Community of Madrid",
+          "country": "ES",
+          "city": "Madrid",
+          "postalCode": "28046"
+        },
+        "staffCountRange": "SIZE_1",
+        "geoLocation": "urn:li:geo:106809575",
+        "locationType": "OTHER",
+        "streetAddressFieldState": "OPT_OUT"
+      }
+    ],
+    "id": 1337,
+    "media": {
+      "mediaUrl": "https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_400_400/0/1638831590218/linkedin_logo?e=1717027200&v=beta&t=0QZkgiGXOhGzVwFJyA1N6WSPmKRwpF8gn_Fw5xDez6c",
+      "mediaType": "image/jpeg",
+      "mediaExpiresSeconds": 1717027200,
+      "id": "urn:li:digitalmediaFile:(urn:li:digitalmediaAsset:C560BAQHaVYd13rRz3A,urn:li:digitalmediaArtifactClass:company-logo_400_400,0)"
+    }
+  },
+  "twitter": {
+    "createdAt": "2017-10-04T15:26:17.000Z",
+    "description": "Ayrshare's APIs provide the core infrastructure for social media posting, management, and analytics. https://t.co/UlcRGcg1X9",
+    "id": "92839209304423",
+    "location": "New York, NY",
+    "name": "Ayrshare",
+    "profileImageUrl": "https://pbs.twimg.com/profile_images/1423334467389767680/ochnivwr_normal.jpg",
+    "publicMetrics": {
+      "followersCount": 5361,
+      "followingCount": 39,
+      "tweetCount": 844,
+      "listedCount": 5
+    },
+    "url": "https://t.co/UlcRGcg1X9",
+    "username": "Ayrshare"
+  },
+  "youtube": {
+    "created": "2009-05-12T05:28:43Z",
+    "description": "",
+    "hiddenSubscriberCount": false,
+    "isLinked": true,
+    "longUploadsStatus": "longUploadsUnspecified",
+    "madeForKids": false,
+    "playlistId": "UU-0dv2mN6SeXwkEKtfKXJnQ",
+    "privacyStatus": "public",
+    "subscriberCount": "28200",
+    "thumbnailUrl": "https://yt3.ggpht.com/OwargtIRcXzB7jlHWgCmitNo-6JX2wbZGdOMg5K7rd5BnX4bSJX1WPaD2Bi4RN3X9SJi4D4h4g=s88-c-k-c0x00ffffff-no-nd-rj",
+    "title": "MelissaEtheridgeVEVO",
+    "url": "https://www.youtube.com/c/@MelissaEtheridgeVEVO",
+    "videoCount": "43",
+    "viewCount": "29872467"
+  }
+}
+```
