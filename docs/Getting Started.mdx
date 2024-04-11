@@ -1,0 +1,30 @@
+# Getting Started
+
+### Link your social accounts and send your first post in a few minutes.
+
+The guide is for setting up a single company. For Business and Enterprise Plan members with multiple users, a personalized integration guide is provided.
+
+[https://www.youtube.com/watch?v=HaWh_QOib_Y](https://www.youtube.com/watch?v=HaWh_QOib_Y)
+
+---
+
+## **Connect Your Social Media Accounts**{#connect-your-social-media-accounts}
+
+Log in or sign up for an [Ayrshare](https://app.ayrshare.com/) account. On the Social Account Linkage page, click the social networks you want to connect. Please be sure to grant all permissions.
+
+<figure style={{textAlign: 'center'}}>
+  <img src={require('/img/image.avif').default} />
+</figure>
+
+## Get Your API Key
+
+You'll need your API Key to authorize access to the API endpoints. This key is used in the header of your requests, and should be preceded by the `Bearer` keyword.
+
+Your API Key is located within the [Developer Dashboard](https://app.ayrshare.com/), specifically on the **API Key** page. If necessary, switch to your 'Primary Profile' via the **User Profiles** page. From there, you can find the **API Key** page in the left-hand side panel.
+
+Every API call must include the API Key in the Header using a `Bearer` Token. Also include the `Content-Type` of `application/json`.
+
+```json showLineNumbers
+"Authorization": "Bearer API_KEY",
+"Content-Type": "application/json"
+```
