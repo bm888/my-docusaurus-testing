@@ -35,3 +35,30 @@ Every API call must include the API Key in the Header using a `Bearer` Token. Al
   "b": 2
 }
 ```
+
+```javascript
+const API_KEY = 'API_KEY';
+
+fetch('https://app.ayrshare.com/api/analytics/post', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${API_KEY}`,
+  },
+  body: JSON.stringify({
+    id: 'Post ID', // required
+    platforms: [
+      'facebook',
+      'instagram',
+      'twitter',
+      'youtube',
+      'tiktok',
+      'linkedin',
+      'pinterest',
+    ], // optional
+  }),
+})
+  .then((res) => res.json())
+  .then((json) => console.log(json))
+  .catch(console.error);
+```
