@@ -62,3 +62,33 @@ fetch('https://app.ayrshare.com/api/analytics/post', {
   .then((json) => console.log(json))
   .catch(console.error);
 ```
+
+```mdx-code-block
+import {compile} from '@mdx-js/mdx'
+// Note: `@remark-embedder` is currently using faux-esm.
+import fauxRemarkEmbedder from '@remark-embedder/core'
+import fauxOembedTransformer from '@remark-embedder/transformer-oembed'
+
+const remarkEmbedder = fauxRemarkEmbedder.default
+const oembedTransformer = fauxOembedTransformer.default
+
+const code = `
+Check out this video:
+
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+`
+
+console.log(
+  String(
+    await compile(code, {
+      remarkPlugins: [
+        [
+          // @ts-expect-error: `remarkEmbedder` types are wrong.
+          remarkEmbedder,
+          {transformers: [oembedTransformer]}
+        ]
+      ]
+    })
+  )
+)
+```
