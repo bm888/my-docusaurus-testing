@@ -18,13 +18,13 @@ import ReactPlayer from "react-player";
 
 https
 
-| One   | Two |     |
-| ----- | --- | --- |
-| 12323 |     |     |
-|       |     |     |
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| platforms\* | array | String array of platforms: "`instagram`", "`facebook`", "`twitter`", or "`youtube`". |
+| twitterUser | string | <p>Twitter handle URL encoded. For example: "@ayrshare" or "ayrshare".</p><p>Required if "twitter" in `platforms` array.</p> |
+| instagramUser | string | <p>Instagram handle URL encoded. For example: "@nygiants" or "nygiants".</p><p>Required if "instagram" in `platforms` array.</p><p /><p>Note: Only Instagram Business and Creator accounts can be returned.</p> |
+| faceBookUser | string | <p>Facebook Page name URL encoded. For example "@Ayrshare" or "Ayrshare".</p><p /><p>Required if "facebook" in `platforms` array. Facebook personal accounts are not permitted by Facebook.</p> |
+| youtubeUser | string | <p>YouTube username URL encoded, channel ID, or playlist ID. Note, channel IDs typically begin with "UC" and playlist IDs begin with "PL".</p><p /><p>For example, send the username "MelissaEtheridgeVEVO" or the channel ID as "UCpSUQewzOXg1F0zLmieKCqQ".</p><p /><p>Required if "youtube" in `platforms` array.</p> |
+| linkedinUser | string | LinkedIn vanity name such as `Linkedin` or `linkedin-marketing-solutions`. |
 
 GET
-
-```mdx-code-block
-<span style={{“backgroundColor”: “rgb(37, 194, 160)”, “borderRadius”: “4px”, “padding”: 0”.3rem”, “color”: “rgb(255, 255, 255)”}}>GET</span>
-```
